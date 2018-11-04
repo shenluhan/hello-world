@@ -1,4 +1,18 @@
-//æ±‚è§£å¦‚ä¸‹æ–¹ç¨‹ç»„
+//Çó½âÈçÏÂ·½³Ì×é 
 //ax + by = c
 //dx + ey = f
-//æ³¨æ„è¾“å…¥/è¾“å‡ºï¼Œæ•°æ®ç±»å‹
+//×¢ÒâÊä³ö/ÊäÈë£¬Êı¾İÀàĞÍ
+#include <stdio.h>
+int main()
+{
+	float a,b,c,d,e,f;
+	printf("ÇëÊäÈë6¸öÊı£¬·Ö±ğ´ú±íax + by = cºÍdx + ey = fÖĞµÄÁù¸öÎ´ÖªÊı");
+	scanf("%f%f%f%f%f%f",&a,&b,&c,&d,&e,&f);
+	if(a*e-b*d==0 && a*f-c*d!=0)
+	printf("·½³Ì×éÎŞ½â"); 
+	if(a*e - b*d == 0 && a*f-c*d==0)
+	printf("·½³Ì×éÓĞÎŞÇî¶à¸ö½â");
+	if(a*e-b*d!=0)
+	printf("x=%f,y=%f",(c*e-b*f)/(a*e-b*d),(a*f-c*d)/(a*e-b*d));
+	return 0;
+ } 
