@@ -1,5 +1,24 @@
-//è¾“å…¥æ•´æ•°ï¼Œå°†æ¯ä½æ•°å­—æ‰“å°å‡ºæ¥ï¼ˆä»Žå·¦å‘å³æ‰“å°ï¼Œç©ºæ ¼åŒºåˆ†ï¼‰
-//2018/11/14 æ›´æ–°
+//ÊäÈëÕûÊý£¬½«Ã¿Î»Êý×Ö´òÓ¡³öÀ´£¨´Ó×óÏòÓÒ´òÓ¡£¬¿Õ¸ñÇø·Ö£©
+//2018/11/14 ¸üÐÂ
+#include<stdio.h>
 int main() {
-    //to do sth
+	int n,x[100000];
+	int j=0;
+	scanf("%d",&n);
+	if(n<10) printf("%d",n);
+	else if(n==10) printf("1 0");
+	else{
+		int i;
+		for(i=0;1;i++){
+			x[i]=n%10;
+			j++;
+			n=(n-x[i])/10;
+			if(n<10){
+				x[j]=n;
+				int v;
+			for(v=0;v<=j;v++)printf("%d ",x[j-v]);break;
+			}
+		}
+	}
+    return 0;
 }
